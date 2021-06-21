@@ -1,5 +1,5 @@
 pandas==1.2.4
-requests @ file:///tmp/build/80754af9/requests_1606691187061/work
-urllib3 @ file:///tmp/build/80754af9/urllib3_1603305693037/work
+requests==2.25.0
+urllib3==1.25.11
 yfinance==0.1.54
 numpy==1.20.2
