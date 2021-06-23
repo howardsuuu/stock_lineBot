@@ -14,7 +14,7 @@ import datetime
 
 # %%
 ### Stock list
-stocks = ['pltr', 'aal', 'mac']
+stocks = ['pltr', 'aal', 'mac', 'nmm']
 
 
 # %%
