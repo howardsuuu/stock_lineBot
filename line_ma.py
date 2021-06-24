@@ -14,7 +14,7 @@ import datetime
 
 # %%
 ### Stock list
-stocks = ['pltr', 'aal', 'mac', 'nmm']
+stocks = ['pltr', 'aal', 'mac', 'nnm']
 
 
 # %%
@@ -179,8 +179,6 @@ def line_notify(msg):
 
 if __name__ == "__main__":
   token = 'GU4ig4X7MLzvjzVYGV7KYwWF1BvYgkQ5s42Kl2upSNY'
-
-
 # %%
 from collections import defaultdict
 
@@ -198,8 +196,6 @@ def organized_data_push():
         line_notify(i.upper() + ' ' + param)
 
 organized_data_push()
-
-
 # %%
 # data = yf.download(tickers='PLTR', period='1d', interval='1m')
 
