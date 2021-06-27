@@ -43,7 +43,7 @@ def get_ma(): # Return Dict
     ma_dic = {}
 
     for hist_stock in stocks:
-        raw_df = yf.Ticker(hist_stock).history(period='max')
+        raw_df = yf.Ticker(hist_stock).history(period='1y')
         simple_df = raw_df[['Close', 'Volume']].copy() # extract col
         #.drop(['High', 'Low', 'Dividends', 'Stock Splits'], axis = 1, inplace = False)
         # simple_hist.columns = ['open', 'close', 'volume'] # rename col
@@ -186,15 +186,15 @@ def organized_data_push():
     
 
     notify_params()
-    dd = defaultdict(list)
+    organ_data = defaultdict(list)
     for d in (short_term, mid_term, Sbuy_or_sell, Mbuy_or_sell): # you can list as many input dicts as you want here
         for key, value in d.items():
-            dd[key].append(value)
+            organ_data[key].append(value)
 
-    for i in dd:
-        param = '/ '.join(dd[i])
+    for i in organ_data:
+        param = '/ '.join(organ_data[i])
         line_notify(i.upper() + ' ' + param)
-
+    print("Good Push")
 organized_data_push()
 # %%
 # data = yf.download(tickers='PLTR', period='1d', interval='1m')
