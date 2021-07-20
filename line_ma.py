@@ -1,10 +1,10 @@
+# -*- coding: utf-8 -*-
 # To add a new cell, type '# %%'
 # To add a new markdown cell, type '# %% [markdown]'
 # %%
 import yfinance as yf
 import numpy as np
 import pandas as pd
-import datetime
 # import matplotlib.pyplot as plt
 # pd.set_option("display.max_rows", None)
 
