@@ -14,7 +14,7 @@ import pandas as pd
 
 # %%
 ### Stock list
-stocks = ['pltr', 'aal', 'mac', 'nmm']
+stocks = ['aapl', 'tsla', 'qqq', 'voo', 'ko']
 
 
 # %%
